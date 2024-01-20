@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const mainRoutes = require('./routes/endRoutes');
-const horaMiddleware = require('./middlewares/horaMiddlewares.js');
+const mainRoutes = require('./routes/endroute');
+const horaMiddleware = require('./middlewares/horaMiddleware.js');
 app.use(horaMiddleware);
 app.use('/', mainRoutes); 
 app.listen(3000, () => {
